@@ -1353,7 +1353,7 @@ ul {
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
     background: rgb(62, 110, 255);
-    background: linear-gradient(90deg, rgba(62, 110, 255, 1) 0%, rgba(17, 17, 17, 1) 84%, rgba(62, 110, 255, 1) 100%);
+    background: linear-gradient(90deg, #2053ea 0%, rgb(47, 1, 59) 84%, #1948d5 100%);
     background-size: 200% 200%;
     background-position: left bottom;
     -webkit-animation-name: animateGradient;
@@ -2561,13 +2561,19 @@ body.loaded .preloader {
 
 .step__box {
     text-align: center
+
 }
 
 .step__box .image {
+    transition: all 0.4s ease;
     width: 100%;
     filter: drop-shadow(0px 40px 20px rgba(255, 186, 114, 0.4));
     -webkit-filter: drop-shadow(0px 40px 20px rgba(255, 186, 114, 0.4));
     -moz-filter: drop-shadow(0px 40px 20px rgba(255, 186, 114, 0.4))
+}
+.step__box .image:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease;
 }
 
 .step__box .image img {
@@ -3213,39 +3219,39 @@ body.loaded .preloader {
 }
 
 .pricing__single-1 {
-    background: #9341d4;
-    background: linear-gradient(45deg, #9341d4 0%, #d98efb 100%);
-    filter: drop-shadow(0px 20px 10px rgba(147, 65, 212, 0.4));
-    -webkit-filter: drop-shadow(0px 20px 10px rgba(147, 65, 212, 0.4));
-    -moz-filter: drop-shadow(0px 20px 10px rgba(147, 65, 212, 0.4))
+    background: #19a5a1;
+    background: linear-gradient(45deg, #19a5a1 0%, #63e8e4 100%);
+    filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
+    -webkit-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
+    -moz-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4))
 }
 
 .pricing__single-1 .icon i {
-    color: #c67af1
+    color: #2db7b3
 }
 
 .pricing__single-1 h6 {
-    color: #f0d6fd
+    color: #fff
 }
 
 .pricing__single-1 .list ul li::before {
-    color: #c67af1
+    color: #4dcc81
 }
 
 .pricing__single-2 {
-    background: #1369ec;
-    background: linear-gradient(45deg, #1369ec 0%, #65bef4 100%);
-    filter: drop-shadow(0px 20px 10px rgba(33, 120, 237, 0.4));
-    -webkit-filter: drop-shadow(0px 20px 10px rgba(33, 120, 237, 0.4));
-    -moz-filter: drop-shadow(0px 20px 10px rgba(33, 120, 237, 0.4))
+    background: #15a5a1;
+    background: linear-gradient(45deg, #15a5a1 0%, #15a5a1 100%);
+    filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
+    -webkit-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
+    -moz-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4))
 }
 
 .pricing__single-2 .icon i {
-    color: #3890f0
+    color: #2db7b3
 }
 
 .pricing__single-2 h6 {
-    color: #bcddf5
+    color: #fff
 }
 
 .pricing__single-2 .list ul li::before {
@@ -3253,8 +3259,8 @@ body.loaded .preloader {
 }
 
 .pricing__single-3 {
-    background: #19a5a1;
-    background: linear-gradient(45deg, #19a5a1 0%, #63e8e4 100%);
+    background: #01807c;
+    background: linear-gradient(45deg, #01807c 0%, #01807c 100%);
     filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
     -webkit-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4));
     -moz-filter: drop-shadow(0px 20px 10px rgba(79, 188, 186, 0.4))
@@ -3265,7 +3271,7 @@ body.loaded .preloader {
 }
 
 .pricing__single-3 h6 {
-    color: #c9f7f6
+    color: #fff
 }
 
 .pricing__single-3 .list ul li::before {
@@ -3288,7 +3294,8 @@ body.loaded .preloader {
 }
 
 .screenshot {
-    width: 100vw
+    width: 100vw;
+    margin-top: 50px;
 }
 
 .screenshot__wrapper {
@@ -3319,7 +3326,9 @@ body.loaded .preloader {
 }
 
 .screenshot .swiper-slide-active {
-    opacity: 1
+    opacity: 1;
+    transform:scale(1.2);
+
 }
 
 .screenshot__info {
@@ -3350,7 +3359,7 @@ body.loaded .preloader {
 
 .screenshot-nav-prev:hover i,
 .screenshot-nav-next:hover i {
-    color: #ff0087
+    color: #3e6eff
 }
 
 .screenshot-nav-prev:focus,
@@ -3440,7 +3449,8 @@ body.loaded .preloader {
     width: calc(100% - 10rem);
     margin: 0 auto;
     position: relative;
-    padding: 1.5rem 0 0 0
+    padding: 10rem 0 10rem 0;
+   
 }
 
 .newsletter__wrapper::before {
@@ -3450,7 +3460,7 @@ body.loaded .preloader {
     bottom: 0;
     width: 100%;
     height: 82%;
-    background-color: #fef2f6;
+    background-color: #f0f7fc;
     border-radius: 3rem
 }
 
@@ -3460,7 +3470,7 @@ body.loaded .preloader {
 }
 
 .newsletter__info .section-heading {
-    width: 88%
+    width: 1000px
 }
 
 .newsletter__info--field {
@@ -3473,18 +3483,18 @@ body.loaded .preloader {
 .newsletter__info button {
     width: 23.1rem;
     margin-left: 1rem;
-    background: #f2026b;
+    background: #3e6eff;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     color: white;
-    background: -webkit-gradient(linear, left bottom, left top, from(#f2026b), color-stop(50%, #ff8aaf), to(#f2026b));
-    background: linear-gradient(0deg, #f2026b 0%, #ff8aaf 50%, #f2026b 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#3e6eff), color-stop(50%, #8ca8fb), to(#3e6eff));
+    background: linear-gradient(0deg, #3e6eff 0%, #8da9fe 50%, #3e6eff 100%);
     border: none;
     background-size: 200% 200%;
     background-position: bottom;
-    filter: drop-shadow(0px 10px 10px rgba(245, 69, 144, 0.4));
-    -webkit-filter: drop-shadow(0px 10px 10px rgba(245, 69, 144, 0.4));
-    -moz-filter: drop-shadow(0px 10px 10px rgba(245, 69, 144, 0.4));
+    filter: drop-shadow(0px 10px 10px #92acf9);
+    -webkit-filter: drop-shadow(0px 10px 10px #92acf9);
+    -moz-filter: drop-shadow(0px 10px 10px #92acf9);
     cursor: pointer
 }
 
@@ -3502,18 +3512,6 @@ body.loaded .preloader {
     position: relative
 }
 
-.newsletter__img::before {
-    content: "";
-    width: 63.6rem;
-    height: 36.7rem;
-    background: url(../images/newsletter-texture.png) no-repeat;
-    background-size: cover;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: -15rem;
-    z-index: 1
-}
 
 @media (max-width: 991.98px) {
     .newsletter {
@@ -3568,7 +3566,7 @@ body.loaded .preloader {
 .input-field {
     width: 33rem;
     height: 6.5rem;
-    border: 4px solid #ffdbe8;
+    border: 4px solid #3e6eff;
     border-radius: 10rem;
     padding: 0 2rem 0 3rem;
     font-size: 1.6rem;
@@ -3593,7 +3591,7 @@ body.loaded .preloader {
 
 .input-field:focus {
     outline: 0;
-    border: 4px solid #fe7fa9
+    border: 4px solid #ffffff
 }
 
 .newsletter-2 .newsletter__wrapper {
