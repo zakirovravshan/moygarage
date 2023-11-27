@@ -79,6 +79,10 @@ ul {
         font-size: 4rem;
         width: 90%
     }
+
+    .questions-img{
+        display: none;
+    }
 }
 
 .color-black {
@@ -196,12 +200,12 @@ ul {
 }
 
 .social ul li.facebook {
-    background: #9341d4;
-    background: -webkit-gradient(linear, left bottom, left top, from(#9341d4), color-stop(50%, #d98efb), to(#9341d4));
-    background: linear-gradient(0deg, #9341d4 0%, #d98efb 50%, #9341d4 100%);
-    filter: drop-shadow(0px 5px 5px rgba(147, 65, 212, 0.4));
-    -webkit-filter: drop-shadow(0px 5px 5px rgba(147, 65, 212, 0.4));
-    -moz-filter: drop-shadow(0px 5px 5px rgba(147, 65, 212, 0.4))
+    background: #4dcc81;
+    background: -webkit-gradient(linear, left bottom, left top, from(#4dcc81), color-stop(50%, #4dcc81), to(#4dcc81));
+    background: linear-gradient(0deg, #4dcc81 0%, #4dcc81 50%, #4dcc81 100%);
+    filter: drop-shadow(0px 5px 5px #8bf7b8)
+    -webkit-filter: drop-shadow(0px 5px 5px #8bf7b8);
+    -moz-filter: drop-shadow(0px 5px 5px #8bf7b8)
 }
 
 .social ul li.twitter {
@@ -2108,8 +2112,24 @@ body.loaded .preloader {
         padding: 10rem 2rem
     }
 
+    .feature .section-heading {
+        margin-bottom: 3rem;
+        font-size: 30px;
+    }
+
     .moygarage {
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+    .feature__box .icon {
+        width: 10.2rem;
+        height: 10.2rem;
+
+    }
+
+    .feature__box .icon i {
+        font-size: 4rem;
+        color: white
     }
 }
 
@@ -2546,6 +2566,17 @@ body.loaded .preloader {
     }
 }
 
+@media (max-width: 576px) {
+    .growth .section-heading {
+        font-size: 30px;
+    }
+
+    .growth__box .content {
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+    }
+}
+
 .step {
     width: 100vw;
     margin-top: 3rem
@@ -2652,7 +2683,7 @@ body.loaded .preloader {
     .step__box .image img {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
-        width: 310px;
+       
 
     }
 
@@ -2671,6 +2702,18 @@ body.loaded .preloader {
         width: calc(100% - 5rem);
         padding: 5rem 2rem
     }
+}
+
+@media (max-width: 576px) {
+     .section-heading {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .step__box .content .paragraph {
+        width: 100%
+    }
+
+
 }
 
 .clients-sec {
@@ -3078,6 +3121,10 @@ body.loaded .preloader {
         width: 30rem;
         height: 30rem
     }
+
+    .card-body{
+        
+    }
 }
 
 .pricing {
@@ -3308,11 +3355,30 @@ body.loaded .preloader {
         font-size: 28px;
         width: 80%
     }
+    .pricing__single .list {
+        
+        width: 97%;
+        margin-top: 2.3rem
+    }
+
+    .pricing__single .icon {
+        width: 8rem;
+        height: 8rem;
+  
+    }
+    
+    .pricing__single .icon i {
+        font-size: 3rem
+    }
+
+    .pricing__single .list ul {
+        padding-left: 25px;
 }
 
 .screenshot {
     width: 100vw;
     margin-top: 50px;
+}
 }
 
 .screenshot__wrapper {
@@ -3327,7 +3393,7 @@ body.loaded .preloader {
 
 .screenshot-slider {
     width: 100vw;
-    margin-top: 9.8rem;
+    margin-top: 4rem;
     margin-left: -2.5%;
     overflow: visible !important
 }
@@ -3418,11 +3484,37 @@ body.loaded .preloader {
     }
 }
 
+@media (max-width: 576px) {
+    .screenshot__wrapper {
+
+        padding: 5rem 0;
+
+    }
+
+        .section-heading {
+            font-size: 30px;
+        }
+
+        .moygarage{
+            font-size: 36px;
+        }
+
+        .related-blog {
+           width: 100%;
+           padding: 20px;
+        }
+
+    
+    
+
+}
+
 .related-blog .section-heading {
     text-align: center;
     margin: 0 auto 5rem auto;
     width: 35%
 }
+
 
 .related-blog .button {
     margin: 10rem auto 0 auto;
@@ -3592,9 +3684,8 @@ body.loaded .preloader {
         width: 80%;
     }
 
-    .input-field {
-        width: 80%;
-    }
+ 
+
     .newsletter__info .section-heading {
         width: 100%;
     }
@@ -3629,6 +3720,12 @@ body.loaded .preloader {
 .input-field:focus {
     outline: 0;
     border: 4px solid #ffffff
+}
+
+@media (max-width: 576px) {
+    .input-field {
+        width: 90%;
+    }
 }
 
 .newsletter-2 .newsletter__wrapper {
