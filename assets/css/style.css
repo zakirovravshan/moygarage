@@ -1730,6 +1730,11 @@ body.loaded .preloader {
     .header__wrapper {
         padding: 0 5rem
     }
+    .header__logo a img {
+        padding: 10px;
+        padding-left: 0;
+        width: 60px;
+    }
 }
 
 .header-2 {
