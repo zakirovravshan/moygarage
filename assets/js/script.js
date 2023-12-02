@@ -1,188 +1,201 @@
 /********************
 header
 ********************/
-$(".header .header__bars").on('click', function () {
+$('.header .header__bars').on('click', function () {
+	var selector = $('.header .header__nav');
 
-    var selector = $(".header .header__nav")
-
-    if (selector.hasClass('shown')) {
-        selector.css('right', "100%");
-        selector.removeClass('shown');
-    } else {
-        selector.css('right', "0");
-        selector.addClass('shown');
-    }
+	if (selector.hasClass('shown')) {
+		selector.css('right', '100%');
+		selector.removeClass('shown');
+	} else {
+		selector.css('right', '0');
+		selector.addClass('shown');
+	}
 });
 
-$(".header .header__nav span").on('click', function () {
+$('.header .header__nav span').on('click', function () {
+	var selector = $('.header .header__nav');
 
-    var selector = $(".header .header__nav")
-
-    if (selector.hasClass('shown')) {
-        selector.css('right', "100%");
-        selector.removeClass('shown');
-    } else {
-        selector.css('right', "0");
-        selector.addClass('shown');
-    }
+	if (selector.hasClass('shown')) {
+		selector.css('right', '100%');
+		selector.removeClass('shown');
+	} else {
+		selector.css('right', '0');
+		selector.addClass('shown');
+	}
 });
 
 $(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    let elementId = $(event.target).attr('href');
-    if (elementId == '#') return;
+	event.preventDefault();
+	let elementId = $(event.target).attr('href');
+	if (elementId == '#') return;
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000, 'swing');
+	$('html, body').animate(
+		{
+			scrollTop: $($.attr(this, 'href')).offset().top,
+		},
+		1000,
+		'swing',
+	);
 });
 
 $(window).on('scroll', () => {
-    if ($(window).scrollTop() > 50) {
-        $('.header-1').addClass('fixed');
-    } else {
-        $('.header-1').removeClass('fixed');
-    }
+	if ($(window).scrollTop() > 50) {
+		$('.header-1').addClass('fixed');
+	} else {
+		$('.header-1').removeClass('fixed');
+	}
 });
 
 $(window).on('scroll', () => {
-    if ($(window).scrollTop() > 0) {
-        $('.header-2').addClass('fixed');
-    } else {
-        $('.header-2').removeClass('fixed');
-    }
+	if ($(window).scrollTop() > 0) {
+		$('.header-2').addClass('fixed');
+	} else {
+		$('.header-2').removeClass('fixed');
+	}
 });
 
 /********************
 testimonial
 ********************/
-$(".testimonial__wrapper").on('mouseover click', (e) => {
-    if ($(e.target).is('img')) {
-        let parentElement = $(e.target).parent().parent();
-        //console.log(parentElement);
-        parentElement.addClass('active');
-        if (parentElement.siblings().hasClass('active')) {
-            parentElement.siblings().removeClass('active');
-        }
-    }
+$('.testimonial__wrapper').on('mouseover click', (e) => {
+	if ($(e.target).is('img')) {
+		let parentElement = $(e.target).parent().parent();
+		//console.log(parentElement);
+		parentElement.addClass('active');
+		if (parentElement.siblings().hasClass('active')) {
+			parentElement.siblings().removeClass('active');
+		}
+	}
 });
 
 /********************
 clients slider
 ********************/
 var clients = new Swiper('.clients-slider', {
-    loop: true,
-    autoplay: true,
-    slidesPerView: 1,
-    breakpoints: {
-        991.98: {
-            slidesPerView: 3,
-        },
-        768: {
-            slidesPerView: 2,
-        }
-    }
+	loop: true,
+	autoplay: true,
+	slidesPerView: 1,
+	breakpoints: {
+		991.98: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+	},
 });
 
 /********************
 screenshot slider
 ********************/
 var screenshot = new Swiper('.screenshot-slider', {
-    loop: true,
-    slidesPerView: 4.75,
-    centeredSlides: true,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.screenshot-nav-next',
-        prevEl: '.screenshot-nav-prev',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        991.98: {
-            slidesPerView: 2.75,
-        },
-        1200: {
-            slidesPerView: 3.25,
-        },
-        1350: {
-            slidesPerView: 3.5,
-        },
-        1600: {
-            slidesPerView: 3.90,
-        },
-        1800: {
-            slidesPerView: 4.75,
-        }
-    }
+	loop: true,
+	slidesPerView: 4.75,
+	centeredSlides: true,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.screenshot-nav-next',
+		prevEl: '.screenshot-nav-prev',
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		991.98: {
+			slidesPerView: 2.75,
+		},
+		1200: {
+			slidesPerView: 3.25,
+		},
+		1350: {
+			slidesPerView: 3.5,
+		},
+		1600: {
+			slidesPerView: 3.9,
+		},
+		1800: {
+			slidesPerView: 4.75,
+		},
+	},
 });
 
 /********************
 related post slider
 ********************/
 var related_post = new Swiper('.blog_related-slider', {
-    loop: true,
-    slidesPerView: 2,
-    navigation: {
-        nextEl: '.related-post-nav .screenshot-nav-next',
-        prevEl: '.related-post-nav .screenshot-nav-prev',
-    },
-    spaceBetween: 30,
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        991.98: {
-            slidesPerView: 2
-        }
-    }
+	loop: true,
+	slidesPerView: 2,
+	navigation: {
+		nextEl: '.related-post-nav .screenshot-nav-next',
+		prevEl: '.related-post-nav .screenshot-nav-prev',
+	},
+	spaceBetween: 30,
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		991.98: {
+			slidesPerView: 2,
+		},
+	},
 });
 
 /********************
 accordion
 ********************/
 $('.card').on('hide.bs.collapse', function (e) {
-    var parentId = $(e.target).parent().attr('id');
-    $(`#${parentId} > .card-header > h5`).addClass('hidden');
+	var parentId = $(e.target).parent().attr('id');
+	$(`#${parentId} > .card-header > h5`).addClass('hidden');
 });
 
 $('.card').on('show.bs.collapse', function (e) {
-    var parentId = $(e.target).parent().attr('id');
-    $(`#${parentId} > .card-header > h5`).removeClass('hidden');
+	var parentId = $(e.target).parent().attr('id');
+	$(`#${parentId} > .card-header > h5`).removeClass('hidden');
 });
 
 /********************
 blog
 ********************/
 $('.category__dropdown').on('click', (e) => {
-    if (($(e.target).parents().hasClass('category__dropdown')) && !($('.category__dropdown-box').hasClass('shown'))) {
-        $('.category__dropdown-box').addClass('shown');
-    } else if (($(e.target).parents().hasClass('category__dropdown-info')) && ($('.category__dropdown-box').hasClass('shown'))) {
-        $('.category__dropdown-box').removeClass('shown');
-    }
+	if (
+		$(e.target).parents().hasClass('category__dropdown') &&
+		!$('.category__dropdown-box').hasClass('shown')
+	) {
+		$('.category__dropdown-box').addClass('shown');
+	} else if (
+		$(e.target).parents().hasClass('category__dropdown-info') &&
+		$('.category__dropdown-box').hasClass('shown')
+	) {
+		$('.category__dropdown-box').removeClass('shown');
+	}
 });
 $('.date__dropdown').on('click', (e) => {
-    if (($(e.target).parents().hasClass('date__dropdown')) && !($('.date__dropdown-box').hasClass('shown'))) {
-        $('.date__dropdown-box').addClass('shown');
-    } else if (($(e.target).parents().hasClass('date__dropdown-info')) && ($('.date__dropdown-box').hasClass('shown'))) {
-        $('.date__dropdown-box').removeClass('shown');
-    }
+	if (
+		$(e.target).parents().hasClass('date__dropdown') &&
+		!$('.date__dropdown-box').hasClass('shown')
+	) {
+		$('.date__dropdown-box').addClass('shown');
+	} else if (
+		$(e.target).parents().hasClass('date__dropdown-info') &&
+		$('.date__dropdown-box').hasClass('shown')
+	) {
+		$('.date__dropdown-box').removeClass('shown');
+	}
 });
 
 $(window).on('click', (e) => {
-    if (!($(e.target).parents().hasClass('category__dropdown'))) {
-        $('.category__dropdown-box').removeClass('shown');
-    }
-    if (!($(e.target).parents().hasClass('date__dropdown'))) {
-        $('.date__dropdown-box').removeClass('shown');
-    }
+	if (!$(e.target).parents().hasClass('category__dropdown')) {
+		$('.category__dropdown-box').removeClass('shown');
+	}
+	if (!$(e.target).parents().hasClass('date__dropdown')) {
+		$('.date__dropdown-box').removeClass('shown');
+	}
 });
 
-
 $('.nav__dropdown-info').on('click', (e) => {
-    let parentId = $(e.target).closest('li').attr('id');
-    $(`#${parentId} > .nav__dropdown-box`).toggleClass('shown');
+	let parentId = $(e.target).closest('li').attr('id');
+	$(`#${parentId} > .nav__dropdown-box`).toggleClass('shown');
 });
 
 /********************
@@ -190,60 +203,46 @@ youtube defer
 ********************/
 window.addEventListener('load', ytdefer_setup);
 
+let form = document.querySelector('#form');
+let message = document.querySelector('#message');
 
+var post = {
+	text: message.value,
+	botTOKEN: `6490061389:AAE2tRzVNw7GkrHD-1Hp19lUT1ds45_20zM`,
+	chatId: -4096235042,
+};
 
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
 
+	fetch(
+		`https://api.telegram.org/bot${post.botTOKEN}/sendMessage?chat_id=${post.chatId}&text=📩: ${message.value} `,
+		{
+			method: 'GET',
+		},
+	).then(
+        (success) => {
+            message.value = '';
+            Toastify({
+                text: `Raqamingiz jo'natildi !`,
+                destination: 'https://github.com/apvarun/toastify-js',
+                newWindow: true,
+                close: true,
+                gravity: 'top', // `top` or `bottom`
+                position: 'center', // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: 'linear-gradient(to right, #3e6eff, #3e6eff,#3e6eff)',
+                },
+                duration: 3000,
+            }).showToast();
+        },
+        (error) => {
+            alert('Error');
+            console.log(error);
+        },
+    );
+		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	console.log(message.value);
+});
