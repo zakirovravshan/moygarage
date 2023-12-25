@@ -579,20 +579,21 @@ ul {
     background-color: white;
     padding: 4rem 4.4rem 2.8rem 4.4rem;
     border-radius: 2rem;
-    position: absolute;
-    width: 34rem
+    position: relative;
+    width: 100%;
+ 
 }
 
 .blog__single-info h3 {
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 3rem;
-    color: #fff
+    color: #3e6eff
 }
 
 .blog__single-info h4 {
     font-size: 1.4rem;
-    color: #fff;
+    color: #19a5a1  ;
     margin: 1.8rem 0 1.5rem 0;
     font-weight: 400
 }
@@ -606,33 +607,30 @@ ul {
     width: 100%;
     height: 100%;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.28);
+    background-color: #ffffff7a;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+   
 }
 
 .blog__single-image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
     border-radius: 3rem;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.28);
+
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8px);
--webkit-backdrop-filter: blur(8px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 .blog__single:hover {
-    background-color: black
+    background-color: rgba(0, 0, 0, 0.215)
 }
 
 .blog__single:hover .blog__single-image img {
@@ -641,14 +639,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .blog .col-lg-4 .blog__single-info {
-    bottom: 1rem;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%)
 }
 
 .blog .col-lg-8 .blog__single-info {
-    bottom: 1rem;
+    bottom: -1rem;
     right: 1rem
 }
 
@@ -936,7 +934,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .blog_single__content--images {
-    width: calc(100% + 40rem);
+    width: 100px;
     float: left;
     margin-left: -20rem;
     display: -webkit-box;
@@ -1060,7 +1058,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border: 4px solid #f0f7fc;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
-    background: #1369ec;
+    background: #535353;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(19, 105, 236, 0)), color-stop(50%, rgba(255, 177, 107, 0)), color-stop(51%, #f2026b), to(#ff8aaf));
     background: linear-gradient(0deg, rgba(19, 105, 236, 0) 0%, rgba(255, 177, 107, 0) 50%, #f2026b 51%, #ff8aaf 100%);
     background-size: 200% 200%;
@@ -1217,7 +1215,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .blog_single .comment_form__wrapper .button {
     border-color: #ffdbe8;
     cursor: pointer;
-    background: #1369ec;
+    background: #666565;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(19, 105, 236, 0)), color-stop(50%, rgba(255, 177, 107, 0)), color-stop(51%, #f2026b), to(#ff8aaf));
     background: linear-gradient(0deg, rgba(19, 105, 236, 0) 0%, rgba(255, 177, 107, 0) 50%, #f2026b 51%, #ff8aaf 100%);
     background-size: 200% 200%;
@@ -1372,7 +1370,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
     background: rgb(62, 110, 255);
-    background: linear-gradient(90deg, #2053ea 0%, rgb(47, 1, 59) 84%, #1948d5 100%);
+    background: linear-gradient(90deg, #2053ea 0%, rgb(47, 1, 59) 84%,  948d5 100%);
     background-size: 200% 200%;
     background-position: left bottom;
     -webkit-animation-name: animateGradient;
@@ -3567,18 +3565,18 @@ body.loaded .preloader {
 }
 
 .blog__single-info {
-    background: #3e6eff;
+    background: #fff;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     color: white;
-    background: -webkit-gradient(linear, left bottom, left top, from(#3e6eff), color-stop(50%, #8ca8fb), to(#3e6eff));
-    background: linear-gradient(0deg, #3e6eff 0%, #8da9fe 50%, #3e6eff 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(50%, #fff), to(#fff));
+    background: linear-gradient(0deg, #fff 0%, #fff 50%, #fff 100%);
     border: none;
     background-size: 200% 200%;
     background-position: bottom;
-    filter: drop-shadow(0px 10px 10px #92acf9);
-    -webkit-filter: drop-shadow(0px 10px 10px #92acf9);
-    -moz-filter: drop-shadow(0px 10px 10px #92acf9);
+    filter: drop-shadow(0px 10px 10px #c9deed);
+    -webkit-filter: drop-shadow(0px 10px 10px #c9deed);
+    -moz-filter: drop-shadow(0px 10px 10px #c9deed);
     cursor: pointer
 }
 
