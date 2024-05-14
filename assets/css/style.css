@@ -79,7 +79,7 @@ ul {
         font-size: 4rem;
         width: 90%
     }
-    
+
 
     .questions-img {
         display: none;
@@ -581,7 +581,7 @@ ul {
     border-radius: 2rem;
     position: relative;
     width: 100%;
- 
+
 }
 
 .blog__single-info h3 {
@@ -593,7 +593,7 @@ ul {
 
 .blog__single-info h4 {
     font-size: 1.4rem;
-    color: #19a5a1  ;
+    color: #19a5a1;
     margin: 1.8rem 0 1.5rem 0;
     font-weight: 400
 }
@@ -610,8 +610,8 @@ ul {
     background-color: #ffffff7a;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  
-   
+
+
 }
 
 .blog__single-image img {
@@ -624,8 +624,8 @@ ul {
     transition: all .25s ease;
     /* From https://css.glass */
 
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -1370,7 +1370,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
     background: rgb(62, 110, 255);
-    background: linear-gradient(90deg, #2053ea 0%, rgb(47, 1, 59) 84%,  948d5 100%);
+    background: linear-gradient(90deg, #2053ea 0%, rgb(47, 1, 59) 84%, 948d5 100%);
     background-size: 200% 200%;
     background-position: left bottom;
     -webkit-animation-name: animateGradient;
@@ -3321,7 +3321,7 @@ body.loaded .preloader {
 }
 
 .pricing__single-1 .list ul li::before {
-    color: #4dcc81
+    color: #4dcc81;
 }
 
 .pricing__single-2 {
